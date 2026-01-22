@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>js dom basic</title>
+
+<style>
+.box{
+  padding:10px;
+  margin:10px;
+  background:#e0e0e0;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1 id="mainTitle">dom manipulation</h1>
+
+<p id="text">this is a simple paragraph</p>
+
+<div class="box">box one</div>
+<div class="box">box two</div>
+
+<button onclick="changeById()">change by id</button>
+<button onclick="changeByClass()">change by class</button>
+<button onclick="changeByQuery()">change by query</button>
+
+<script>
+
+// get element by id
+// id always single element i think
+function changeById(){
+  var el = document.getElementById("text");
+  el.style.color = "red";
+  el.innerHTML = "text changed using id";
+}
+
+// get element by class name
+// class gives collection so loop needed
+function changeByClass(){
+  var items = document.getElementsByClassName("box");
+  for(var i=0;i<items.length;i++){
+    items[i].style.background = "lightblue";
+    items[i].innerHTML = "changed by class";
+  }
+}
+
+// query selector
+// query select first match only
+function changeByQuery(){
+  var q = document.querySelector(".box");
+  q.style.border = "2px solid black";
+  q.innerHTML = "changed by query";
+}
+
+</script>
+
+<p>
+dom is used to control html using js.
+sometimes confusing but powerful.
+</p>
+
+</body>
+</html>
