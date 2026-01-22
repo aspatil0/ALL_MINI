@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>js loops basic</title>
+</head>
+
+<body>
+
+<h1>javascript loops</h1>
+
+<p id="result"></p>
+
+<script>
+
+// for loop basic
+// this loop run from 1 to 5 i think
+var text = "for loop output : ";
+
+for(var i = 1; i <= 5; i++){
+  text = text + i + " ";
+}
+
+document.getElementById("result").innerHTML = text;
+
+
+// while loop
+// while works till condition true
+var j = 1;
+var whileText = "<br>while loop output : ";
+
+while(j <= 5){
+  whileText = whileText + j + " ";
+  j++;
+}
+
+document.getElementById("result").innerHTML += whileText;
+
+
+// do while loop
+// do while run atleast one time
+var k = 1;
+var doText = "<br>do while loop output : ";
+
+do{
+  doText = doText + k + " ";
+  k++;
+}
+while(k <= 5);
+
+document.getElementById("result").innerHTML += doText;
+
+
+// for in loop
+// mostly use for object but here simple example
+var student = {
+  name:"adi",
+  age:20,
+  city:"pune"
+};
+
+var inText = "<br>for in loop : ";
+
+for(var key in student){
+  inText = inText + key + " = " + student[key] + " , ";
+}
+
+document.getElementById("result").innerHTML += inText;
+
+
+// for of loop
+// for of use for array values
+var arr = ["html","css","js"];
+var ofText = "<br>for of loop : ";
+
+for(var item of arr){
+  ofText = ofText + item + " ";
+}
+
+document.getElementById("result").innerHTML += ofText;
+
+</script>
+
+<p>
+loops help to repeat work.
+at start it confuse but later u understand.
+practice is main thing.
+</p>
+
+</body>
+</html>
