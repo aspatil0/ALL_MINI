@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>js basics let var const</title>
+</head>
+
+<body>
+
+<h1>javascript basics</h1>
+
+<p id="output"></p>
+
+<button onclick="showVar()">use var</button>
+<button onclick="showLet()">use let</button>
+<button onclick="showConst()">use const</button>
+
+<script>
+
+var name = "aditya";
+
+function showVar(){
+  var age = 20;
+  document.getElementById("output").innerText =
+  "var example : name is " + name + " and age is " + age;
+}
+
+function showLet(){
+  let city = "pune";
+  document.getElementById("output").innerText =
+  "let example : city is " + city;
+}
+
+function showConst(){
+  const college = "vit";
+  document.getElementById("output").innerText =
+  "const example : college is " + college;
+}
+
+</script>
+
+<p>
+var can be redeclared.
+let cannot be redeclared in same block.
+const value cannot be changed.
+</p>
+
+</body>
+</html>
