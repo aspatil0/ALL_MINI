@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>flexbox basic</title>
+
+<style>
+body{
+  font-family:Arial;
+  background:#f5f5f5;
+}
+
+h1{
+  text-align:center;
+}
+
+.container{
+  display:flex;
+  background:#ddd;
+  padding:10px;
+}
+
+.box{
+  background:#ffffff;
+  border:1px solid #999;
+  padding:20px;
+  margin:10px;
+  width:150px;
+}
+
+.row{
+  display:flex;
+  flex-direction:row;
+}
+
+.column{
+  display:flex;
+  flex-direction:column;
+}
+
+.center{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:150px;
+  background:#cce5ff;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>flexbox basic intro</h1>
+
+<h2>normal flex row</h2>
+<div class="container row">
+  <div class="box">box 1</div>
+  <div class="box">box 2</div>
+  <div class="box">box 3</div>
+</div>
+
+<h2>flex column</h2>
+<div class="container column">
+  <div class="box">item a</div>
+  <div class="box">item b</div>
+  <div class="box">item c</div>
+</div>
+
+<h2>center using flex</h2>
+<div class="center">
+  <div class="box">center box</div>
+</div>
+
+<p style="margin:20px;">
+flexbox is used to arrange items easily.
+i am learning slowly and practicing.
+</p>
+
+</body>
+</html>
