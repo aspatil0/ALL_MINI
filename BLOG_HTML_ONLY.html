@@ -1,0 +1,152 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+    body {
+      background: #f4f6f8;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+    header {
+      background: #111827;
+      color: #ffffff;
+      padding: 20px 0;
+    }
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 500;
+    }
+    .hero {
+      padding: 60px 0;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      color: #6b7280;
+      max-width: 600px;
+      margin: auto;
+    }
+    .posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 50px 0;
+    }
+    .post {
+      background: #ffffff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+    .post img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .post-content {
+      padding: 20px;
+    }
+    .post-content h3 {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+    .post-content p {
+      color: #4b5563;
+      margin-bottom: 15px;
+    }
+    .post-content a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 600;
+    }
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 60px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container">
+      <nav>
+        <h2>MyBlog</h2>
+        <div>
+          <a href="#">Home</a>
+          <a href="#">Blogs</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero container">
+    <h1>Insights, Stories & Ideas</h1>
+    <p>Read thoughtful articles on technology, life, and innovation written to inspire and inform.</p>
+  </section>
+
+  <main class="container">
+    <section class="posts">
+      <article class="post">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="">
+        <div class="post-content">
+          <h3>Building Scalable Web Apps</h3>
+          <p>Learn the principles and architecture behind modern scalable web applications.</p>
+          <a href="#">Read More</a>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f" alt="">
+        <div class="post-content">
+          <h3>The Future of AI</h3>
+          <p>An overview of how artificial intelligence is shaping industries worldwide.</p>
+          <a href="#">Read More</a>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+        <div class="post-content">
+          <h3>Consistency and Growth</h3>
+          <p>Why small daily improvements matter more than sudden breakthroughs.</p>
+          <a href="#">Read More</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 MyBlog. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
