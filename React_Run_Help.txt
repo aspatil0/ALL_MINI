@@ -1,0 +1,87 @@
+REACT PROJECT RUN COMMANDS (VS CODE)
+===================================
+
+STEP 1: OPEN VS CODE
+-------------------
+Open Visual Studio Code
+File → Open Folder → Select or Create a Folder
+
+
+STEP 2: OPEN TERMINAL IN VS CODE
+-------------------------------
+Shortcut: Ctrl + ~
+OR
+Menu: View → Terminal
+
+
+STEP 3: CHECK NODE & NPM
+-----------------------
+node -v
+npm -v
+
+If versions appear, Node.js is installed.
+
+
+STEP 4: CREATE REACT PROJECT (VITE METHOD)
+------------------------------------------
+npm create vite@latest
+
+Enter project name
+Select framework: React
+Select variant: JavaScript or TypeScript
+
+
+STEP 5: MOVE INTO PROJECT FOLDER
+--------------------------------
+cd project-name
+
+
+STEP 6: INSTALL DEPENDENCIES
+---------------------------
+npm install
+
+
+STEP 7: RUN REACT PROJECT
+------------------------
+npm run dev
+
+
+STEP 8: OPEN IN BROWSER
+----------------------
+http://localhost:5173
+
+
+STEP 9: STOP SERVER
+-------------------
+Ctrl + C
+
+
+ALTERNATIVE METHOD (CREATE REACT APP)
+-------------------------------------
+npx create-react-app my-app
+cd my-app
+npm start
+
+Runs on:
+http://localhost:3000
+
+
+COMMON COMMANDS
+---------------
+npm install
+npm run dev
+npm start
+npm run build
+npm run preview
+
+
+BASIC PROJECT STRUCTURE (VITE)
+------------------------------
+project-name/
+node_modules/
+src/
+App.jsx
+main.jsx
+index.html
+package.json
+vite.config.js
