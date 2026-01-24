@@ -1,0 +1,5 @@
+1. Extract zip
+2. cd backend
+3. npm init -y
+4. npm install express mongoose cors
+5. node server.js
