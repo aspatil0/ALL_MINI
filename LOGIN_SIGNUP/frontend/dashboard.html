@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Welcome to Dashboard</h1>
+
+<p id="username"></p>
+
+<script>
+  // Get name from URL
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get("name");
+
+  document.getElementById("username").innerText =
+    "Hello, " + name;
+</script>
+
+</body>
+</html>
