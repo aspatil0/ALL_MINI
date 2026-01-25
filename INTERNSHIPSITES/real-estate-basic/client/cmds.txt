@@ -1,4 +1,16 @@
-cd ../server
+
+
+
+cd server
 npm init -y
 npm install express cors
 node server.js
+
+
+
+
+cd client
+npx create-react-app .
+npm install react-router-dom
+npm start
+
