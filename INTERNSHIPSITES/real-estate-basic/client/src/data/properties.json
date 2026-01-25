@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "2BHK Apartment",
+    "price": "\u20b945,00,000",
+    "location": "Mumbai",
+    "type": "Buy",
+    "image": "/images/house1.jpg",
+    "description": "Spacious apartment near city center."
+  }
+]
